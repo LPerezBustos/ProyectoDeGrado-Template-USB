@@ -1,0 +1,158 @@
+% ************************************** HEADER *****************************************
+% ************************ Packages needed and some configurations **********************
+% ***************************************************************************************
+
+% ************************************ MARGINS ******************************************
+\usepackage[left=30mm,right=20mm,top=20mm,bottom=20mm]{geometry}
+
+% ************************************** SPANISH ****************************************
+\usepackage[spanish,es-lcroman,es-tabla]{babel} % lowercase roman numbers and "Tabla" name
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+
+\fancypagestyle{fan}{ % redefine "fan" style
+    \fancyhf{}
+    \fancyhead[R]{\thepage} % page number in upper right corner
+    \renewcommand{\headrulewidth}{0pt} % without separation line in header
+}
+
+\fancypagestyle{fan2}{ % redefine "fan2" style
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt} % without separation line in header
+    \fancyfoot[C]{\thepage}
+}
+
+% ********************************* FIGURES ************************************
+\usepackage{graphicx}
+\usepackage{float} % for image positioning
+
+% ****************************** CITAS TEXTUALES *******************************
+\usepackage{csquotes} % quotes
+\setquotestyle[mexican]{spanish} % quotation marks --> mexican style
+
+\renewenvironment{displayquote} % over margin for quotes with more than 3 lines
+  {\small\list{}{\rightmargin=0.5cm \leftmargin=1.0cm}
+   \item\relax}
+  {\endlist}
+  
+\usepackage{epigraph} % epigraph in first page of every chapter
+\usepackage{blindtext} % verification text
+\usepackage{hyperref} % url
+
+% ********************************** TABLES ************************************
+\usepackage[table,xcdraw]{xcolor} % colors for cells and borders
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{adjustbox} % adjust to page size
+
+% ******************************* MATH AND UNITS *******************************
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx} % unidades del sistema internacional
+
+% ****************************** PROGRAMMING CODE ******************************
+\usepackage{listings}
+\usepackage{color} % color configuration
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0} % some color definitions
+\definecolor{codegray}{rgb}{0.5,0.5,0.5} % {RED,GREEN,BLUE}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{black},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    aboveskip=2em,
+    belowskip=2em,
+}
+
+\lstset{style=mystyle} % set to style configured behind
+\usepackage{chngcntr}
+
+% ************* TITLE FORMAT FOR: CHAPTERS / SECTIONS /SUBSECTIONS  ***********
+\RequirePackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\center\bfseries}{\large CAPÍTULO \thechapter}{5pt}{\bfseries}   
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt} % delete additional space (-30pt) between title and text
+
+\titleformat{\section}{\normalfont\raggedright\bfseries}{\thesection.}{5pt}{} % section format
+\titleformat{\subsection}{\normalfont\raggedright\bfseries}{\thesubsection.}{5pt}{} % subsection format
+\titleformat{\subsubsection}{\normalfont\raggedright\bfseries}{\thesubsubsection.}{5pt}{} % sub-subsection format
+
+% ******************* TILE FORMAT FOR: TOC / LOF / LOT  ***********************
+\addto\captionsspanish{\renewcommand{\listtablename}{ÍNDICE DE TABLAS}}
+\addto\captionsspanish{\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}}
+
+\usepackage{tocloft} % toc tile format
+\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hfill} % centering title
+\renewcommand{\cftaftertoctitleskip}{20pt} % space between title and text
+\renewcommand{\cftbeforetoctitleskip}{0cm}
+\renewcommand{\cftlottitlefont}{\hfill\normalfont\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill} % centering title
+\renewcommand{\cftafterlottitleskip}{20pt} % space between title and text
+\renewcommand{\cftbeforelottitleskip}{0cm}
+\renewcommand{\cftloftitlefont}{\hfill\normalfont\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill} % centering title
+\renewcommand{\cftafterloftitleskip}{20pt} % space between title and text
+\renewcommand{\cftbeforeloftitleskip}{0cm}
+
+%********************************** WATERMARK ***********************************
+\usepackage[nostamp]{draftwatermark} % normally off
+
+% to turn off watermark
+\makeatletter
+\def\watermarkoff{%
+        \@sc@wm@stampfalse
+}
+\makeatother
+
+% to turn on watermark
+\makeatletter
+\def\watermarkon{%
+        \@sc@wm@stamptrue
+}
+\makeatother
+
+\SetWatermarkAngle{45} % angle to display in page
+\SetWatermarkText{Acta de Evaluación} % page 3 in thesis book
+\SetWatermarkScale{0.6}
+\SetWatermarkLightness{.8}
+
+% *************************** TABLE OF CONTENTS ********************************
+\setcounter{secnumdepth}{3} % depth in table of contents
+\setcounter{tocdepth}{3}
+
+% ******************************* ABBREVIATIONS ********************************
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\addto\captionsspanish{\renewcommand{\nomname}{LISTA DE ABREVIATURAS}}
+
+% ***************** ABBREVIATIONS AND ACRONYMS LIST ****************************
+% ALL THE ABBREVIATIONS AND ACRONYMS HAVE TO BE HERE FOLLOWING THE FORMAT IN SAMPLE
+% FOR ACRONYMS IN ANOTHER LANGUAGE, TRANSLATION TO SPANISH MUST APPEARS
+\nomenclature{$USB$}{Universidad Simón Bolívar}
+\nomenclature{$EC$}{Electronics and Circuits\\Electrónica y Circuitos}
+\nomenclature{$...$}{...}
+% ******************************* REFERENCES ***********************************
+% ** REFERENCE PART NEEDS TO BE IMPROVED TO HAVE EXACTLY USB FORMAT **
+\usepackage[backend=biber, maxnames=99, style=numeric-comp, citestyle=numeric, bibstyle=numeric, sorting=none, url=false, natbib=true]{biblatex}
+\bibliography{3_BackMatter/Referencias/ref} % Location of references.bib only for biblatex
+
+\DeclareFieldFormat{url}{Disponible en Internet\addcolon\space\url{#1}}
+\DeclareFieldFormat[online]{date}{}
+% ******************************************************************************
