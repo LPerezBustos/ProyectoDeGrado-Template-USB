@@ -1,26 +1,9 @@
-% ************************************************************************************************
-% **************** Template para la elaboración del libro de Proyecto de Grado,*******************
-% ******************** siguiendo los lineamientos establecidos por el ****************************
-% ************* Decanato de Estudios Profesionales de la Universidad Simón Bolívar ***************
-% *** "Normas para Redacción y Presentación del Libro Final del Proyecto de Grado y Pasantías" ***
-% ***************** en la pág. web http://www.profesionales.usb.ve/es/node/4 *********************
-% ************************************************************************************************
-
-% ************************************************************************************************
-% *** Versión: v0.1                                                                            ***
-% *** Autor: Luis Pérez Bustos                                                                 ***
-% *** Estudiante de Ingeniería Electrónica                                                     ***
-% *** Fecha: 27/02/2017                                                                        ***                      
-% *** Licencia: MIT License (c) 2013 Luis Perez Bustos                                         ***
-% *** GitHub: https://github.com/lperezbustos/usb-tesis-template/                              ***
-% ************************************************************************************************
-
 % ************************** Class Identification ******************************
 \newcommand\fileversion{0.1}
-\newcommand\filedate{27/02/2017}
+\newcommand\filedate{08/04/2017}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Clases/USB}
-\typeout{https://github.com/lperezbustos/usb-tesis-template/}
+\typeout{https://github.com/lperezbustos/ProyectoDeGrado-Template-USB/}
 
 
 % ******************************************************************************
