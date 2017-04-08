@@ -60,6 +60,7 @@ Estoy atento a cualquier sugerencia para posibles mejoras y/o errores que el *te
     - **Main-Matter**: introducción, capítulos y conclusiones.
     - **Back-Matter**: apéndices y referencias.
 - El archivo **main.tex** establece la estructura general del proyecto.
+- El capítulo 1 contiene un resumen de los comandos más utilizados para la elaboración del libro (figuras, tablas, quotations, ecuaciones, listas ...).
 - La lista de acrónimos se encuentra en el archivo **preambulo.tex**.
 - El archivo **ref.bib** contiene las fuentes consultadas a lo largo del proyecto. La utilización de algún programa como **JabRef** o **Mendeley** :thumbsup: puede ayudar a administrar de manera eficiente las referencias.
 - Personalmente, me gusta utilizar [*Tables Generator*](http://www.tablesgenerator.com/) para generar las tablas de manera rápida y eficiente (old habits from Microsoft Excel :fearful: !).
