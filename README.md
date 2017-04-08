@@ -10,11 +10,11 @@ Estudiante de Ingeniería Electrónica en la Universidad Simón Bolívar <br />
 
 ## Justificación
 
-El presente desarrollo pretende ser una ayuda para los estudiantes de la Universidad Simón Bolívar que se encuentren redactando su libro de proyecto de grado. El objetivo es reducir la cantidad de tiempo necesario para generar el *layout* y enfocarse completamente en el contenido y la calidad del trabajo. El formato no es oficial pero contiene la mayoría de las características establecidas por el Decanato de Estudios Profesionales en el archivo: [Normas para Redacción y Presentación del Libro Final del Proyecto de Grado y Pasantías](http://www.profesionales.usb.ve/sites/default/files/Archivos_Normas/Normas_DEP_libro_actual%20versi%C3%B3n%20para%20Consejo%20asesor%20DEP_0.pdf).\\
+El presente desarrollo pretende ser una ayuda para los estudiantes de la Universidad Simón Bolívar que se encuentren redactando su libro de proyecto de grado. El objetivo es reducir la cantidad de tiempo necesario para generar el *layout* y enfocarse completamente en el contenido y la calidad del trabajo. El formato no es oficial pero contiene la mayoría de las características establecidas por el Decanato de Estudios Profesionales en el archivo: [Normas para Redacción y Presentación del Libro Final del Proyecto de Grado y Pasantías](http://www.profesionales.usb.ve/sites/default/files/Archivos_Normas/Normas_DEP_libro_actual%20versi%C3%B3n%20para%20Consejo%20asesor%20DEP_0.pdf). <br />
 
 Estoy atento a cualquier sugerencia para posibles mejoras y/o errores que el *template* pueda contener. Siéntanse libres de contactarme al correo electrónico detallado anteriormente.
 
-## Algunos tips :+1::
+## Algunos tips :+1:
 
 - No escribas inmediatamente, haz una estructura del proyecto que estas realizando y ve de lo general a lo específico.
 - Coloca imágenes en orden, de tal manera que tengas que explicar cada una de ellas en forma estructurada.
@@ -68,7 +68,7 @@ Estoy atento a cualquier sugerencia para posibles mejoras y/o errores que el *te
 ## Historial de cambios
 
 ### 08/04/2017 - Versión 1.0
-- Primera versión luego de terminados los requisitos para obtener el título de *Ingeniero Electrónico* por parte de la Universidad Simón Bolívar.
+- Primera versión.
 
 ## Basado en:
 
